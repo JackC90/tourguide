@@ -1,0 +1,75 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.card {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding-top: 1rem;
+  border-radius: 2px;
+  font-size: 1.6rem;
+  color: #000;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-content {    
+  font-size: 1.4rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: normal;
+
+  .card-text {
+    padding: 10px 15px;
+  }
+
+  .profile {
+    padding: 15px 15px;
+    min-height: 5em;
+
+    .avatar {
+      width: 50px;
+      border-radius: 50%;
+      float: left;
+    }
+    .profile-name {
+      flex: 1 1;
+      margin-left: 1em;
+      float: left;
+    }
+  }
+}
+
+.text-block {
+  display: block
+}
+
+.padding-05em {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.text-gray {
+  color: gray;
+}

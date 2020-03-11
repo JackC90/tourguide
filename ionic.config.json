@@ -1,0 +1,8 @@
+{
+  "name": "tourGuide",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "11dc91dd"
+}

@@ -1,0 +1,39 @@
+page-experiences {
+  .experience {
+    display: flex;
+    align-items: flex-start;
+  }
+  .experience:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .experience-name {
+    margin: 0;
+    font-size: 1.6rem;
+
+    .city-name {
+      text-transform: uppercase;
+    }
+  }
+
+  .experience-img {
+    top: 0;
+    margin-left: -10px;
+
+    .img { 
+      height: 8em;
+      width: 102%;
+      object-fit: cover;
+      object-position: bottom; 
+    }
+  }
+
+  /* large devices  */
+  @media (min-width: 576px) {
+    .User__details {
+      display: block;
+      padding: 0 0 0 1rem;
+    }
+  }
+}

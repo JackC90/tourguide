@@ -1,0 +1,65 @@
+<!--
+  Generated template for the ExperiencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><strong class="city-name upper">{{ city.name }}</strong>  <strong>{{ experience.name }}</strong><br></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="card-content"> 
+    <div class="profile">
+      <img class="avatar" src="{{ guide.avatar }}" alt="{{ guide.name }}" />  
+      <div class="profile-name">
+        {{ guide.name }}<br>
+        <span *ngFor="let language of guide.languages" class="upper text-gray">
+          {{ language.code }}&nbsp;
+        </span>
+      </div>
+    </div>
+    <div class="experience-name text-block card-text no-padding-bottom">
+      <h3><strong><span class="city-name upper">{{ city.name }}</span> {{ experience.name }}</strong></h3>
+      <h5><em>{{ experience.tagline }}</em></h5>
+    </div>
+
+    <div class="experience-img">
+      <img class="img" src="{{ experience.img || city.img }}" alt="{{ experience.name }}" /> 
+    </div>
+
+    <div class="card-text">
+      {{ experience.currency }} {{ experience.price }} 
+    </div>
+
+    <div class="card-text">
+      <div>
+        <h3>Essentials</h3>
+        <p>
+          {{ experience.essentials }}
+        </p>
+      </div>
+      <div>
+        <h3>Availability</h3>
+        <ul>
+          <li *ngFor="let session of experience.sessions">
+            {{ session.day + "," }} {{ session.time_start }} - {{ session.time_end }}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <p>
+          {{ experience.description }}
+        </p>
+      </div>
+    </div>
+
+    <div id="experience-map"></div>
+  </div>
+</ion-content>
